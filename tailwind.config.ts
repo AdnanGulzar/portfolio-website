@@ -8,11 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+     fontFamily:{
+      'fira':"fira code",
+     },
+     colors:{
+      primary:"#E5E9F0",
+      code: "#607B96",
+      blue: "#4D5BCE",
+      bgprimary:"#011627",
+      border:"#1E2D3D",
+      main:"#1E2D3D",       
+     }
+   
     },
   },
   plugins: [],
