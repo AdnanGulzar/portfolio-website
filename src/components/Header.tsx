@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { NavMobile } from './MobileNav';
 import { routes } from "@/data/routeList";
+import CircularText from './CircularText';
 const Header = () => {
  
  
@@ -16,7 +17,7 @@ const Header = () => {
   
   return (<>
       {/* {<SidebarSection isOpen={isOpen} setIsOpen={setOpen} />}    */}
-    <header className="flex flex-row justify-between items-center border  rounded-t-lg border-border ">
+    <header className="flex flex-row justify-between items-center border  rounded-t-lg border-border relative">
     <Link href={"/"}> <h1 className="text-2xl font-bold text-center text-primary pl-3 border-x px-10 h-full border-border py-1 z-10">
         Adnan Gul
       </h1>
@@ -35,6 +36,8 @@ const Header = () => {
         {/* <Hamburger toggled={isOpen} toggle={setOpen} size={20} /> */}
       </div>
       <NavMobile/>
+      
+        <CircularText/>
     </header>
     </>
     

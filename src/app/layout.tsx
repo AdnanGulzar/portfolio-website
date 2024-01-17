@@ -6,6 +6,8 @@ import { cn } from '@/lib/utils'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SidebarSection from '@/components/Sidebar'
+import { AnimatePresence } from 'framer-motion'
+import AnimationProvider from '@/components/AnimationProvider'
 
 
 
@@ -36,6 +38,7 @@ export default function RootLayout({
 
         )}
       >
+         <AnimationProvider>
         <main className='bg-bgprimary w-full min-h-[94vh] lg:m-4 max-w-[1300px] border-border rounded-lg flex flex-col justify-between z-10 '>
           <div className='h-full'>
 
@@ -45,6 +48,7 @@ export default function RootLayout({
           </div>
         <Footer/>
         </main>
+        </AnimationProvider>
 
               
       </body>

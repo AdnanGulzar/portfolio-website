@@ -27,6 +27,7 @@
       --input: 240 5.9% 90%;
       --ring: 142.1 76.2% 36.3%;
       --radius: 1rem;
+      font-size: 85%;
     }
 
     li{
@@ -41,6 +42,159 @@
 color-primary{
   color: var(--primary);
 }
+.rotating-curved-text {
+  position: relative;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 
 }
+
+
+
+
+
+
+.skill-orbit:nth-child(1){
+  width: 100%; height: 100%;   
+}
+.skill-orbit:nth-child(2){
+  width: 82.5%; height: 82.5%; 
+}
+.skill-orbit:nth-child(3){
+  width: 65%; height: 65%;
+}
+.skill-orbit:nth-child(4){
+  width: 47.5%; height: 47.5%;
+}
+.skill-orbit:nth-child(5){
+  width: 30%; height: 30%;
+}
+
+
+.skill-orbit:nth-child(1) .skill-planet{
+  /* background: #A9925F;
+  border:2px solid #FFF9BF; */
+  color:#FFF9BF;
+  font-size: 16px;
+  line-height: 26px;
+}
+.skill-orbit:nth-child(2) .skill-planet{
+  /* background: #5F6151;
+  border:2px solid #A3B476; */
+  color:#A3B476;
+  font-size: 12px;
+  line-height: 26px;
+}
+.skill-orbit:nth-child(3) .skill-planet{
+  /* background: #443F35;
+  border:2px solid #C77751; */
+  color:#C77751;
+  font-size: 9px;
+  line-height: 26px;
+}
+.skill-orbit:nth-child(4) .skill-planet{
+  /* background: #6E391E;
+  border:2px solid #FBAF3F; */
+  color:#FBAF3F;
+  font-size: 18px;
+  line-height: 26px;
+}
+.skill-orbit:nth-child(5) .skill-planet{
+  /* background: #0064B1;
+  border:2px solid #46BAEB; */
+  color:#46BAEB;
+  font-size: 18px;
+  line-height: 26px;
+} 
+.skill-orbit:nth-child(1) .skill-planet{
+  -webkit-animation: travelOrbit 10s infinite linear;
+  animation: travelOrbit 10s infinite linear;
+  -webkit-transform-origin: 50% 713%;
+  transform-origin: 50% 713%;
+}
+.skill-orbit:nth-child(1) span{
+  -webkit-animation: unrotate 10s infinite linear;
+  animation: unrotate 10s infinite linear;
+}
+.skill-orbit:nth-child(2) .skill-planet{
+  -webkit-animation: travelOrbit 8s infinite linear;
+  animation: travelOrbit 8s infinite linear;
+  -webkit-transform-origin: 50% 597%;
+  transform-origin: 50% 597%;
+}
+.skill-orbit:nth-child(2) span{
+  -webkit-animation: unrotate 8s infinite linear; 
+  animation: unrotate 8s infinite linear; 
+}
+.skill-orbit:nth-child(3) .skill-planet{
+  -webkit-animation: travelOrbit 6s infinite linear;
+  animation: travelOrbit 6s infinite linear;
+  -webkit-transform-origin: 50% 480%;
+  transform-origin: 50% 480%;
+}
+.skill-orbit:nth-child(3) span{
+  -webkit-animation: unrotate 6s infinite linear; 
+  animation: unrotate 6s infinite linear; 
+}
+.skill-orbit:nth-child(4) .skill-planet{
+  -webkit-animation: travelOrbit 4s infinite linear;
+  animation: travelOrbit 4s infinite linear;
+  -webkit-transform-origin: 50% 363%;
+  transform-origin: 50% 363%;
+}
+.skill-orbit:nth-child(4) span{
+  -webkit-animation: unrotate 4s infinite linear; 
+  animation: unrotate 4s infinite linear; 
+}
+.skill-orbit:nth-child(5) .skill-planet{
+  -webkit-animation: travelOrbit 2s infinite linear;
+  animation: travelOrbit 2s infinite linear;
+  -webkit-transform-origin: 50% 243%;
+  transform-origin: 50% 243%;
+}
+.skill-orbit:nth-child(5) span{
+  -webkit-animation: unrotate 2s infinite linear; 
+  animation: unrotate 2s infinite linear; 
+} 
+@-webkit-keyframes travelOrbit { 
+  0% { -webkit-transform: rotate(0deg); } 
+  100% { -webkit-transform: rotate(360deg); } 
+} 
+@keyframes travelOrbit { 
+  0% { transform: rotate(0deg); } 
+  100% { transform: rotate(360deg); } 
+}
+
+@-webkit-keyframes unrotate { 
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(-360deg); } 
+}  
+@keyframes unrotate { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); } 
+} 
+
+
+.skills-circle:hover{ 
+-webkit-transform:rotate3d(60,35,0,360deg);
+transform:rotate3d(60,35,0,360deg);
+}  

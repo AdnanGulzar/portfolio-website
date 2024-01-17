@@ -1,3 +1,4 @@
+import PageTransition from "@/components/PageTransition";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import {
   faCode,
@@ -12,7 +13,8 @@ import React from "react";
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <section className="flex h-[100%] gap-2 ">
-      <div className=" border-r-2 h-[80vh] border-border p-2  pr-5 flex flex-col gap-5 mt-5">
+       {/* <PageTransition/>  */}
+      <div className="hidden    p-2  pr-5 md:flex flex-col gap-5 mt-5">
         <div className="text-sm w-6 ">
           <FontAwesomeIcon size="sm" icon={faCode} color="#607B96" />
         </div>

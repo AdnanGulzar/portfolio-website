@@ -1,8 +1,11 @@
+import PageTransition from '@/components/PageTransition'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>projects</div>
+    <><PageTransition/>
+    <div>projects</div> 
+    </>
   )
 }
 
