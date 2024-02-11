@@ -7,7 +7,6 @@ import React, { useRef } from "react";
 import AboutAnimatedText from '../../components/AboutAnimatedText';
 import PageTransition from "@/components/PageTransition";
 import Experience from "@/components/ExperieceTimeLine";
-import { useRaf } from "react-use";
 // @ts-ignore
 import { SkillBars } from 'react-skills';
 
@@ -25,7 +24,6 @@ const skillsData= [
 ]
 
 const Page = () => {
-  const ref=useRef<HTMLImageElement | null>(null)
 
   return (
     <section className="px-2 flex flex-row w-full justify-center flex-wrap border-border border-l-2">
@@ -62,7 +60,7 @@ const Page = () => {
         </div>
       </div>
       <SkillBars skills={skillsData} />
-      <Skills  ref={ref} />
+      <Skills  />
      
     </section>
     

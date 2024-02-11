@@ -6,7 +6,7 @@ const Skill=({name}:{name:string}): React.ReactNode=>{
     )
 }
 import React ,{ CSSProperties, HTMLAttributes, RefAttributes, RefObject } from 'react'
-const Skills = ({ref}:{ref:RefObject<HTMLImageElement>}) => {
+const Skills = () => {
   
 
   
