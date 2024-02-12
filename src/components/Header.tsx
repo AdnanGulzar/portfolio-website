@@ -1,8 +1,5 @@
 "use client";
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import React, { useEffect, useRef, useState } from "react";
-import { Spin as Hamburger } from "hamburger-react";
-import SidebarSection from './Sidebar';
+import React, { useState } from "react";
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -13,10 +10,9 @@ const Header = () => {
  
  
   const pathname = usePathname()
-  const [isOpen, setOpen] = useState(false);
+
   
   return (<>
-      {/* {<SidebarSection isOpen={isOpen} setIsOpen={setOpen} />}    */}
     <header className="flex flex-row justify-between items-center border  rounded-t-lg border-border relative">
     <Link href={"/"}> <h1 className="text-2xl font-bold text-center text-primary pl-3 border-x px-10 h-full border-border py-1 z-10">
         Adnan Gul
@@ -25,13 +21,16 @@ const Header = () => {
       <nav className=" flex-row justify-between p-1 hidden md:flex ">
         {
           routes.map((route,index)=>{
-            return  <Link key={index} href={route.href}><li className={cn("border-x px-10 h-full border-border py-1 hover:bg-blue transition-all ease-linear",pathname===route.href?"bg-blue":"")}>{route.title}</li></Link>
+            if(route?.title==="_contact"){
+              return ""
+            }
+            return  <Link key={index} href={route.href}><div className={cn("border-x px-10 h-full border-border py-1 hover:bg-blue transition-all ease-linear",pathname===route.href?"bg-blue":"")}>{route.title}</div></Link>
           })
         }
 
 
       </nav>
-      <Link href={"/contact"}><li className={cn(" hidden md:flex border-x px-10 h-full border-border py-1 hover:bg-blue transition-all ease-linear",pathname==="/contact"?"bg-blue":"")}>_contact me</li></Link>
+      <Link href={"/contact"}><div className={cn(" hidden md:flex border-x px-10 h-full border-border py-1 hover:bg-blue transition-all ease-linear",pathname==="/contact"?"bg-blue":"")}>_contact me</div></Link>
       <div  className='block md:hidden'>
         {/* <Hamburger toggled={isOpen} toggle={setOpen} size={20} /> */}
       </div>

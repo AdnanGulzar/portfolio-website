@@ -14,5 +14,10 @@ export const routes = [
       href: "/projects",
     
     },
+    {
+      title: "_contact",
+      href: "/contact",
+    
+    },
   
   ];

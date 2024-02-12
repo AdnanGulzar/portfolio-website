@@ -1,8 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faGithub, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import CircularText from './CircularText'
+
 
 
 const Footer = () => {
@@ -13,12 +12,12 @@ const Footer = () => {
              Find me in
             </h1>    
           
-              <li className='border-x  w-10 text-center px-2  border-border'><FontAwesomeIcon  icon={faLinkedinIn} color='#607B96' /></li>
-              <li className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faFacebook}  color='#607B96'/></li>
-              <li className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faWhatsapp}  color='#607B96'/></li>
+              <div className='border-x  w-10 text-center px-2  border-border'><FontAwesomeIcon  icon={faLinkedinIn} color='#607B96' /></div>
+              <div className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faFacebook}  color='#607B96'/></div>
+              <div className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faWhatsapp}  color='#607B96'/></div>
              
               </div>
-              <li className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faGithub}  color='#607B96'/></li>
+              <div className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faGithub}  color='#607B96'/></div>
           </footer>
   )
 }

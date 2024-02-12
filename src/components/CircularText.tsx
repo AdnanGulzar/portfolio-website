@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const CircularText = () => {
   return (
-    <motion.section  className='absolute top-[50px] right-5 '>
+    <motion.section  className='absolute top-[50px] right-7 '>
     <ReactCurvedText
     width={100}
     height={100}
