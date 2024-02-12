@@ -5,9 +5,8 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import SidebarSection from '@/components/Sidebar'
-import { AnimatePresence } from 'framer-motion'
 import AnimationProvider from '@/components/AnimationProvider'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 
@@ -50,7 +49,7 @@ export default function RootLayout({
         </main>
         </AnimationProvider>
 
-              
+        <SpeedInsights />   
       </body>
     </html>
   )
