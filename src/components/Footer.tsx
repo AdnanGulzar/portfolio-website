@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { socialLink } from '@/data/socialLinks'
 
 
 
@@ -12,12 +13,17 @@ const Footer = () => {
              Find me in
             </h1>    
           
+             <a href={socialLink.linkenIn}>
               <div className='border-x  w-10 text-center px-2  border-border'><FontAwesomeIcon  icon={faLinkedinIn} color='#607B96' /></div>
-              <div className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faFacebook}  color='#607B96'/></div>
+              </a> 
+              {/* <div className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faFacebook}  color='#607B96'/></div> */}
+              <a href={socialLink.whatsApp}>
               <div className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faWhatsapp}  color='#607B96'/></div>
-             
+             </a>
               </div>
+              <a href={socialLink.gitHub}>
               <div className='border-x  w-10 text-center px-2 border-border'><FontAwesomeIcon  icon={faGithub}  color='#607B96'/></div>
+              </a>
           </footer>
   )
 }

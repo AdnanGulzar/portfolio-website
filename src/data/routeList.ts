@@ -9,11 +9,11 @@ export const routes = [
       href: "/about",
     
     },
-    {
-      title: "_projects",
-      href: "/projects",
+    // {
+    //   title: "_projects",
+    //   href: "/projects",
     
-    },
+    // },
     {
       title: "_contact",
       href: "/contact",

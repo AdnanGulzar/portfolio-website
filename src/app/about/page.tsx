@@ -1,9 +1,6 @@
 "use client"
-import AnimatedText from "@/components/AnimatedText";
 import Skills from "@/components/Skills";
-import ExperienceSection from "@/components/ExperieceTimeLine";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import React, { useRef } from "react";
+import React from "react";
 import AboutAnimatedText from '../../components/AboutAnimatedText';
 import PageTransition from "@/components/PageTransition";
 import Experience from "@/components/ExperieceTimeLine";
@@ -13,8 +10,18 @@ import { SkillBars } from 'react-skills';
 const skillsData= [
   {
     name: 'ReactJS',
-    level: 70,
+    level: 80,
     color: 'blue',
+  },
+  {
+    name: 'Nextjs',
+    level: 70,
+    color: 'green',
+  },
+  {
+    name: 'Angular',
+    level: 60,
+    color: 'orange',
   },
   {
     name: 'Node',
@@ -38,21 +45,14 @@ const Page = () => {
           <h1>About me</h1>
           <code className="text-md text-code max-w-[400px] block">
           < AboutAnimatedText text={`/**
- * About me
- * I have 5 years of еxperience in web
- * development lorem ipsum dolor sit amet, 
- * consectetur adipiscing elit, sed do eiusmod
- * tempor incididunt ut labore et dolore
- * magna aliqua. Ut enim ad minim veniam,
- * quis nostrud exercitation ullamco laboris
- * nisi ut aliquip ex ea commodo consequat.
- * Duis aute irure dolor in reprehenderit in
- *
- * Duis aute irure dolor in reprehenderit in
- * voluptate velit esse cillum dolore eu fugiat 
- * nulla pariatur. Excepteur sint occaecat 
- * officia deserunt mollit anim id est laborum.
- */
+ ** About me  **
+Building quality websites and applications with HTML, CSS, JavaScript and React.js .
+A passionate web developer with 4+ years’ of well-rounded experience in web development and design.
+Also worked as a freelancer and remote job . Currently working on projects with react.js and node.js.
+And now seeks a position with a top technology firm to work with in a professional environment . Web
+Applications features like responsiveness , progressives'
+web apps , animation and futuristic design are the concerned things that are focused
+ **/
         `}/>
             
           </code>
