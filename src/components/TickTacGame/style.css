@@ -13,6 +13,9 @@
     text-align: center;
     width: 60px;
     color: #4D5BCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
   
@@ -50,6 +53,7 @@ box-shadow:
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
     /* gap: 10px; */
   }
   
