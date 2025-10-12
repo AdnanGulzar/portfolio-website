@@ -132,7 +132,7 @@ export default function Home() {
 
         <button className=" mt-4 bg-blue hover:opacity-70 font-bold py-2 px-4 rounded ">
         <a
-            href="/adnangul_mern_dev.pdf"
+            href="/adnangul_frontend_dev.pdf"
             download="adnangul_mern_dev.pdf"
             className='inline-flex items-center'
           >
